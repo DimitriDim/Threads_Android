@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fr.m2i.threads_demo.MainActivity">
+
+    <TextView
+        android:id="@+id/lblTitre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Multi-Threads"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnCompteur1"
+        style="@style/button"
+        android:onClick="counter1"
+        android:text="Traitement dans le thread principal" />
+
+    <Button
+        android:id="@+id/btnCompteur2"
+        style="@style/button"
+        android:onClick="counter2"
+        android:text="Thread1" />
+
+    <Button
+        android:id="@+id/btnCompteur4"
+        style="@style/button"
+        android:onClick="counter3"
+        android:text="Thread2" />
+
+    <Button
+        android:id="@+id/btnCompteur5"
+        style="@style/button"
+        android:onClick="counter4"
+        android:text="ThreadClassApart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtCounter1"
+            style="@style/counter" />
+
+        <TextView
+            android:id="@+id/txtCounter2"
+            style="@style/counter" />
+    </LinearLayout>
+
+
+</LinearLayout>
